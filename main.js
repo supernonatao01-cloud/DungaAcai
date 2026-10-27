@@ -12,7 +12,7 @@
   $$('[data-whats]').forEach(a => {
     const n = WHATS[a.dataset.whats];
     if (!n) return;
-    a.href = `https://wa.me/${n}?text=${encodeURIComponent(WHATS_MSG)}`;
+    a.href = `https://wa.me/${n}?text=${encodeURIComponent(a.dataset.msg || WHATS_MSG)}`;
     a.hidden = false;
   });
 
@@ -75,20 +75,36 @@
   }
   addEventListener('scroll', onScroll, { passive: true }); addEventListener('resize', onScroll); onScroll();
 
-  /* palco do hero: parallax com o mouse */
-  const stage = $('[data-stage]');
-  if (stage && !reduce) {
-    const items = $$('[data-depth]', stage);
-    let tx = 0, ty = 0, cx = 0, cy = 0;
+  /* produtos flutuantes: parallax de scroll (velocidade e giro) + mouse */
+  if (!reduce) {
+    const items = $$('.fl[data-speed], .fl[data-depth]').map(el => ({
+      el,
+      host: el.closest('[data-fhost]') || el.parentElement,
+      sp: parseFloat(el.dataset.speed || 0),
+      rot: parseFloat(el.dataset.rot || 0),
+      d: parseFloat(el.dataset.depth || 0),
+      x: 0, y: 0, r: 0,
+    }));
+    const live = new Set();
+    const hio = new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? live.add(e.target) : live.delete(e.target)), { rootMargin: '200px 0px' });
+    new Set(items.map(i => i.host)).forEach(h => hio.observe(h));
+
+    let mx = 0, my = 0;
     addEventListener('pointermove', e => {
       if (e.pointerType === 'touch') return;
-      tx = (e.clientX / innerWidth - .5); ty = (e.clientY / innerHeight - .5);
+      mx = e.clientX / innerWidth - .5; my = e.clientY / innerHeight - .5;
     }, { passive: true });
+
     (function loop() {
-      cx += (tx - cx) * .08; cy += (ty - cy) * .08;
-      items.forEach(el => {
-        const d = +el.dataset.depth;
-        el.style.translate = `${(-cx * d).toFixed(2)}px ${(-cy * d).toFixed(2)}px`;
+      const vh = innerHeight, rects = new Map();
+      items.forEach(it => {
+        if (!live.has(it.host)) return;
+        let r = rects.get(it.host);
+        if (!r) { r = it.host.getBoundingClientRect(); rects.set(it.host, r); }
+        const off = r.top + r.height / 2 - vh / 2;
+        const ty = off * it.sp - my * it.d, tx = -mx * it.d, tr = off * it.rot * 0.02;
+        it.x += (tx - it.x) * .1; it.y += (ty - it.y) * .1; it.r += (tr - it.r) * .1;
+        it.el.style.transform = `translate3d(${it.x.toFixed(2)}px,${it.y.toFixed(2)}px,0) rotate(${it.r.toFixed(2)}deg)`;
       });
       requestAnimationFrame(loop);
     })();

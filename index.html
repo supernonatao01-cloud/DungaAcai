@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Dunga Açaí & Gelatos · Desde 2011 em Cajazeiras e Uiraúna</title>
-  <meta name="description" content="Dunga Açaí & Gelatos, desde 2011. Peça pelo delivery, confira a Quarta do Açaí e a Quinta do Milk Shake e encontre a loja em Cajazeiras ou Uiraúna.">
+  <meta name="description" content="Dunga Açaí & Gelatos, desde 2011. Peça pelo delivery, confira a Quarta do Açaí e a Quinta do Milk Shake, encontre a loja em Cajazeiras ou Uiraúna e contrate o Dunga Móvel para o seu evento.">
   <meta name="theme-color" content="#7E3774">
   <script>document.documentElement.classList.add('js')</script>
   <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preload" as="image" href="assets/acai-bowl.webp" type="image/webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +38,7 @@
       <nav class="nav" aria-label="Principal">
         <a href="#promocoes">Promoções</a>
         <a href="#unidades">Unidades</a>
+        <a href="#dunga-movel">Dunga Móvel</a>
         <a href="#como-pedir">Como pedir</a>
       </nav>
       <button class="btn btn--purple btn--sm" type="button" data-open-order>
@@ -63,7 +65,7 @@
             <span class="t-big">Dunga</span>
             <span class="t-line">Açaí &amp; <em>Gelatos</em></span>
           </h1>
-          <p class="hero__sub">Feito com carinho desde 2011. Peça pelo delivery ou venha nos visitar em uma das nossas lojas.</p>
+          <p class="hero__sub">Açaí, milk shake e gelatos feitos com carinho desde 2011. Peça pelo delivery ou venha nos visitar.</p>
           <div class="hero__cta">
             <button class="btn btn--purple btn--lg" type="button" data-open-order data-press>
               <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bag"/></svg>
@@ -80,33 +82,29 @@
           </a>
         </div>
 
-        <div class="hero__stage" data-stage>
-          <div class="stage__ring" aria-hidden="true" data-depth="10"></div>
-          <div class="stage__card" data-depth="16">
-            <img src="assets/logo.png" alt="Dunga Açaí & Gelatos, desde 2011" width="768" height="323" fetchpriority="high">
-          </div>
+        <div class="hero__stage" data-stage data-fhost>
+          <div class="stage__disc" aria-hidden="true"></div>
+          <div class="stage__orbit" aria-hidden="true"></div>
 
-          <div class="float f-sticker" data-depth="30" aria-hidden="true">
-            <svg viewBox="0 0 200 200" class="spin">
-              <defs><path id="circ" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
-              <circle cx="100" cy="100" r="96" fill="#305039"/>
-              <circle cx="100" cy="100" r="88" fill="none" stroke="#fff" stroke-opacity=".35" stroke-dasharray="3 6"/>
-              <text font-family="Fredoka, sans-serif" font-weight="600" font-size="19" letter-spacing="4" fill="#fff">
-                <textPath href="#circ">DESDE 2011 • AÇAÍ &amp; GELATOS • DESDE 2011 • AÇAÍ &amp; GELATOS •</textPath>
-              </text>
-            </svg>
-            <b>15<small>anos</small></b>
-          </div>
+          <div class="fl h-g8 fl--blur" data-depth="8" data-speed=".05" aria-hidden="true"><img src="assets/gelato-8.webp" alt="" width="561" height="640"></div>
+          <div class="fl h-bowl" data-depth="16" data-speed=".04"><img src="assets/acai-bowl.webp" alt="Açaí Dunga com frutas, granola e calda" width="924" height="900" fetchpriority="high"></div>
+          <div class="fl h-g3" data-depth="30" data-speed=".1" data-rot="-1" aria-hidden="true"><img src="assets/gelato-3.webp" alt="" width="560" height="640"></div>
+          <div class="fl h-copo" data-depth="24" data-speed="-.04" data-rot="1" aria-hidden="true"><img src="assets/acai-copo.webp" alt="" width="470" height="760"></div>
+          <div class="fl h-g4" data-depth="36" data-speed=".14" data-rot="1" aria-hidden="true"><img src="assets/gelato-4.webp" alt="" width="560" height="640"></div>
+          <div class="fl h-shake" data-depth="40" data-speed=".1" data-rot="-1" aria-hidden="true"><img src="assets/milkshake.webp" alt="" width="414" height="760"></div>
+          <div class="fl h-g2" data-depth="46" data-speed=".18" aria-hidden="true"><img src="assets/gelato-2.webp" alt="" width="576" height="640"></div>
 
-          <div class="float f-chip f-chip--a" data-depth="38" aria-hidden="true">
-            <svg class="ico" viewBox="0 0 24 24"><use href="#i-bag"/></svg> Delivery
+          <div class="fl h-sticker" data-depth="20" aria-hidden="true">
+            <div class="stk">
+              <svg viewBox="0 0 200 200" class="spin">
+                <defs><path id="circ1" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"/></defs>
+                <circle cx="100" cy="100" r="96" fill="#305039"/>
+                <circle cx="100" cy="100" r="88" fill="none" stroke="#fff" stroke-opacity=".35" stroke-dasharray="3 6"/>
+                <text font-family="Fredoka, sans-serif" font-weight="600" font-size="17" fill="#fff"><textPath href="#circ1" textLength="425" lengthAdjust="spacing">DESDE 2011 • AÇAÍ &amp; GELATOS •</textPath></text>
+              </svg>
+              <b>15<small>anos</small></b>
+            </div>
           </div>
-          <div class="float f-chip f-chip--b" data-depth="24" aria-hidden="true">
-            <svg class="ico" viewBox="0 0 24 24"><use href="#i-pin"/></svg> 2 unidades
-          </div>
-          <img class="float f-zig" src="assets/zigzag-verde.png" alt="" data-depth="20" aria-hidden="true">
-          <i class="float f-dot f-dot--1" data-depth="44" aria-hidden="true"></i>
-          <i class="float f-dot f-dot--2" data-depth="12" aria-hidden="true"></i>
         </div>
       </div>
 
@@ -119,13 +117,16 @@
     <!-- faixa -->
     <div class="ribbon" id="faixa" aria-hidden="true">
       <div class="ribbon__track">
-        <span>Desde 2011</span><span class="dot">●</span><span>Cajazeiras</span><span class="dot">●</span><span>Uiraúna</span><span class="dot">●</span><span>Peça pelo delivery</span><span class="dot">●</span><span>Quarta do Açaí</span><span class="dot">●</span><span>Quinta do Milk Shake</span><span class="dot">●</span>
-        <span>Desde 2011</span><span class="dot">●</span><span>Cajazeiras</span><span class="dot">●</span><span>Uiraúna</span><span class="dot">●</span><span>Peça pelo delivery</span><span class="dot">●</span><span>Quarta do Açaí</span><span class="dot">●</span><span>Quinta do Milk Shake</span><span class="dot">●</span>
+        <span>Desde 2011</span><span class="dot">●</span><span>Cajazeiras</span><span class="dot">●</span><span>Uiraúna</span><span class="dot">●</span><span>Peça pelo delivery</span><span class="dot">●</span><span>Quarta do Açaí</span><span class="dot">●</span><span>Quinta do Milk Shake</span><span class="dot">●</span><span>Dunga Móvel</span><span class="dot">●</span>
+        <span>Desde 2011</span><span class="dot">●</span><span>Cajazeiras</span><span class="dot">●</span><span>Uiraúna</span><span class="dot">●</span><span>Peça pelo delivery</span><span class="dot">●</span><span>Quarta do Açaí</span><span class="dot">●</span><span>Quinta do Milk Shake</span><span class="dot">●</span><span>Dunga Móvel</span><span class="dot">●</span>
       </div>
     </div>
 
     <!-- 02 · PROMOÇÕES -->
-    <section class="promos" id="promocoes">
+    <section class="promos" id="promocoes" data-fhost>
+      <div class="fl fl--blur fl--lg p-g5" data-speed=".12" data-rot="-1.2" aria-hidden="true"><img src="assets/gelato-5.webp" alt="" loading="lazy" width="568" height="640"></div>
+      <div class="fl fl--lg p-g6" data-speed="-.1" data-rot="1.2" aria-hidden="true"><img src="assets/gelato-6.webp" alt="" loading="lazy" width="569" height="640"></div>
+
       <div class="wrap">
         <header class="section-head">
           <p class="eyebrow eyebrow--green reveal">Promoções da semana</p>
@@ -135,97 +136,171 @@
 
         <div class="promos__grid">
           <article class="promo promo--wed reveal" data-day="3" data-tilt>
-            <img class="promo__pat" src="assets/padrao-branco.png" alt="" aria-hidden="true">
+            <div class="promo__bg" aria-hidden="true"><img src="assets/padrao-branco.png" alt=""></div>
             <span class="promo__badge" hidden>Hoje!</span>
-            <p class="promo__day">Toda quarta-feira</p>
-            <h3>Quarta do <em>Açaí</em></h3>
-            <p class="promo__txt">Toda quarta tem promoção de açaí esperando por você. É só pedir pelo delivery ou passar na loja.</p>
-            <button class="btn btn--white" type="button" data-open-order data-press>Quero aproveitar</button>
+            <div class="promo__body">
+              <p class="promo__day">Toda quarta-feira</p>
+              <h3>Quarta do <em>Açaí</em></h3>
+              <p class="promo__txt">Toda quarta tem promoção de açaí esperando por você. É só pedir pelo delivery ou passar na loja.</p>
+              <button class="btn btn--white" type="button" data-open-order data-press>Quero aproveitar</button>
+            </div>
+            <div class="promo__art" aria-hidden="true">
+              <span class="art-glow"></span>
+              <div class="fl a-bowl"><img src="assets/acai-bowl.webp" alt="" loading="lazy" width="924" height="900"></div>
+              <div class="fl a-copo"><img src="assets/acai-copo.webp" alt="" loading="lazy" width="470" height="760"></div>
+            </div>
           </article>
 
           <article class="promo promo--thu reveal" data-day="4" data-tilt>
-            <img class="promo__pat" src="assets/padrao-branco.png" alt="" aria-hidden="true">
+            <div class="promo__bg" aria-hidden="true"><img src="assets/padrao-branco.png" alt=""></div>
             <span class="promo__badge" hidden>Hoje!</span>
-            <p class="promo__day">Toda quinta-feira</p>
-            <h3>Quinta do <em>Milk Shake</em></h3>
-            <p class="promo__txt">Upgrade de tamanho, sem pagar mais por isso:</p>
-
-            <ul class="upgrade">
-              <li>
-                <span class="up__pay">Pague <b>300 ml</b></span>
-                <svg class="ico up__arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
-                <span class="up__get">Leve <b>500 ml</b></span>
-              </li>
-              <li>
-                <span class="up__pay">Pague <b>500 ml</b></span>
-                <svg class="ico up__arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
-                <span class="up__get">Leve <b>700 ml</b></span>
-              </li>
-            </ul>
-
-            <button class="btn btn--white" type="button" data-open-order data-press>Quero aproveitar</button>
+            <div class="promo__body">
+              <p class="promo__day">Toda quinta-feira</p>
+              <h3>Quinta do <em>Milk Shake</em></h3>
+              <p class="promo__txt">Upgrade de tamanho, sem pagar mais por isso:</p>
+              <ul class="upgrade">
+                <li>
+                  <span class="up__pay">Pague <b>300 ml</b></span>
+                  <svg class="ico up__arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+                  <span class="up__get">Leve <b>500 ml</b></span>
+                </li>
+                <li>
+                  <span class="up__pay">Pague <b>500 ml</b></span>
+                  <svg class="ico up__arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg>
+                  <span class="up__get">Leve <b>700 ml</b></span>
+                </li>
+              </ul>
+              <button class="btn btn--white" type="button" data-open-order data-press>Quero aproveitar</button>
+            </div>
+            <div class="promo__art" aria-hidden="true">
+              <span class="art-glow"></span>
+              <div class="fl a-shake"><img src="assets/milkshake.webp" alt="" loading="lazy" width="414" height="760"></div>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
     <!-- 03 · UNIDADES -->
-    <section class="stores" id="unidades">
+    <section class="stores" id="unidades" data-fhost>
+      <div class="fl fl--lg s-g7" data-speed=".14" data-rot="1.2" aria-hidden="true"><img src="assets/gelato-7.webp" alt="" loading="lazy" width="567" height="640"></div>
+      <div class="fl fl--blur fl--lg s-g2" data-speed="-.12" data-rot="-1" aria-hidden="true"><img src="assets/gelato-2.webp" alt="" loading="lazy" width="576" height="640"></div>
+
       <div class="wrap">
         <header class="section-head">
           <p class="eyebrow reveal">Nossas unidades</p>
           <h2 class="h2 reveal" data-words>Duas lojas para você chegar mais perto.</h2>
-          <p class="lead reveal">Peça pelo delivery ou abra a rota direto no mapa.</p>
+          <p class="lead reveal">Peça pelo delivery, chame no WhatsApp ou abra a rota direto no mapa.</p>
         </header>
 
         <div class="stores__grid">
           <article class="store reveal" data-tilt>
-            <div class="store__num" aria-hidden="true">1</div>
-            <span class="tag">Matriz</span>
-            <h3>Cajazeiras</h3>
-            <address class="store__addr">
-              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
-              <span>Av. Engenheiro Carlos Pires de Sá, 218<br>Cajazeiras – PB</span>
-            </address>
-            <div class="store__actions">
-              <a class="btn btn--purple" data-press target="_blank" rel="noopener" href="https://pedido.anota.ai/loja/dunga-acai?f=ms">
-                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bag"/></svg>Pedir delivery
-              </a>
-              <a class="btn btn--whats" data-press data-whats="caj" target="_blank" rel="noopener" hidden>
-                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whats"/></svg>WhatsApp
-              </a>
-              <a class="btn btn--outline" data-press target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Av.+Engenheiro+Carlos+Pires+de+S%C3%A1%2C+218%2C+Cajazeiras%2C+PB">
-                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-route"/></svg>Como chegar
-              </a>
+            <figure class="store__photo">
+              <img src="assets/unidade-cajazeiras.webp" alt="Fachada da Dunga Açaí em Cajazeiras, com mesas e cadeiras roxas e verdes na calçada" loading="lazy" width="1080" height="720">
+              <span class="store__n" aria-hidden="true">1</span>
+              <span class="tag">Matriz</span>
+            </figure>
+            <div class="store__body">
+              <h3>Cajazeiras</h3>
+              <address class="store__addr">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
+                <span>Av. Engenheiro Carlos Pires de Sá, 218<br>Cajazeiras – PB</span>
+              </address>
+              <div class="store__actions">
+                <a class="btn btn--purple" data-press target="_blank" rel="noopener" href="https://pedido.anota.ai/loja/dunga-acai?f=ms">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bag"/></svg>Pedir delivery
+                </a>
+                <a class="btn btn--whats" data-press data-whats="caj" target="_blank" rel="noopener" hidden>
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whats"/></svg>WhatsApp
+                </a>
+                <a class="btn btn--outline" data-press target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Av.+Engenheiro+Carlos+Pires+de+S%C3%A1%2C+218%2C+Cajazeiras%2C+PB">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-route"/></svg>Como chegar
+                </a>
+              </div>
             </div>
           </article>
 
           <article class="store store--green reveal" data-tilt>
-            <div class="store__num" aria-hidden="true">2</div>
-            <span class="tag">Uiraúna</span>
-            <h3>Uiraúna</h3>
-            <address class="store__addr">
-              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
-              <span>Capitão Israel, s/n, em frente à Praça Padre França<br>Uiraúna – PB</span>
-            </address>
-            <div class="store__actions">
-              <a class="btn btn--green" data-press target="_blank" rel="noopener" href="https://pedido.anota.ai/loja/aai-do-dunga-uirauna?f=ms">
-                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bag"/></svg>Pedir delivery
-              </a>
-              <a class="btn btn--whats" data-press data-whats="uir" target="_blank" rel="noopener" hidden>
-                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whats"/></svg>WhatsApp
-              </a>
-              <a class="btn btn--outline btn--outline-green" data-press target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a+Padre+Fran%C3%A7a%2C+Uira%C3%BAna%2C+PB">
-                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-route"/></svg>Como chegar
-              </a>
+            <figure class="store__photo">
+              <img src="assets/unidade-uirauna.webp" alt="Fachada da Dunga Açaí em Uiraúna, com marquise roxa e portas de madeira" loading="lazy" width="960" height="640">
+              <span class="store__n" aria-hidden="true">2</span>
+              <span class="tag">Uiraúna</span>
+            </figure>
+            <div class="store__body">
+              <h3>Uiraúna</h3>
+              <address class="store__addr">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
+                <span>Capitão Israel, s/n, em frente à Praça Padre França<br>Uiraúna – PB</span>
+              </address>
+              <div class="store__actions">
+                <a class="btn btn--green" data-press target="_blank" rel="noopener" href="https://pedido.anota.ai/loja/aai-do-dunga-uirauna?f=ms">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bag"/></svg>Pedir delivery
+                </a>
+                <a class="btn btn--whats" data-press data-whats="uir" target="_blank" rel="noopener" hidden>
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whats"/></svg>WhatsApp
+                </a>
+                <a class="btn btn--outline btn--outline-green" data-press target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a+Padre+Fran%C3%A7a%2C+Uira%C3%BAna%2C+PB">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-route"/></svg>Como chegar
+                </a>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- 04 · COMO PEDIR -->
-    <section class="how" id="como-pedir">
+    <!-- 04 · DUNGA MÓVEL -->
+    <section class="movel" id="dunga-movel" data-fhost>
+      <div class="wrap">
+        <div class="movel__panel reveal">
+          <div class="movel__bg" aria-hidden="true"><img src="assets/zigzag-branco.png" alt=""></div>
+
+          <div class="movel__copy">
+            <p class="eyebrow eyebrow--light">Dunga Móvel</p>
+            <h2 class="h2 h2--light">Leve o Dunga para o seu evento.</h2>
+            <p class="movel__lead">O Dunga Móvel pode ser contratado para eventos. Um carrinho com a cara da marca, pronto para deixar a sua festa ainda mais gostosa.</p>
+            <ul class="chips" aria-label="Ideal para">
+              <li>Aniversários</li>
+              <li>Casamentos</li>
+              <li>Formaturas</li>
+              <li>Eventos corporativos</li>
+            </ul>
+            <div class="movel__cta">
+              <a class="btn btn--white btn--lg" data-press data-whats="caj" data-msg="Olá! Quero contratar o Dunga Móvel para um evento." target="_blank" rel="noopener" hidden>
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whats"/></svg>Orçamento · Cajazeiras
+              </a>
+              <a class="btn btn--ghost-dark btn--lg" data-press data-whats="uir" data-msg="Olá! Quero contratar o Dunga Móvel para um evento." target="_blank" rel="noopener" hidden>
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whats"/></svg>Orçamento · Uiraúna
+              </a>
+            </div>
+          </div>
+
+          <div class="movel__stage">
+            <div class="movel__disc" aria-hidden="true"></div>
+            <div class="fl m-g6" data-speed=".08" data-rot="1" aria-hidden="true"><img src="assets/gelato-6.webp" alt="" loading="lazy" width="569" height="640"></div>
+            <div class="fl m-shake" data-speed="-.06" data-rot="-1" aria-hidden="true"><img src="assets/milkshake.webp" alt="" loading="lazy" width="414" height="760"></div>
+            <div class="fl m-g3" data-speed=".12" data-rot="1" aria-hidden="true"><img src="assets/gelato-3.webp" alt="" loading="lazy" width="560" height="640"></div>
+            <img class="movel__cart" src="assets/dunga-movel.webp" alt="Dunga Móvel: carrinho do Dunga com toppings e freezer de gelatos" loading="lazy" width="963" height="900">
+            <div class="fl m-sticker" aria-hidden="true">
+              <div class="stk">
+                <svg viewBox="0 0 200 200" class="spin">
+                  <defs><path id="circ2" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"/></defs>
+                  <circle cx="100" cy="100" r="96" fill="#7E3774"/>
+                  <circle cx="100" cy="100" r="88" fill="none" stroke="#fff" stroke-opacity=".35" stroke-dasharray="3 6"/>
+                  <text font-family="Fredoka, sans-serif" font-weight="600" font-size="17" fill="#fff"><textPath href="#circ2" textLength="425" lengthAdjust="spacing">DUNGA MÓVEL • PARA EVENTOS •</textPath></text>
+                </svg>
+                <svg class="ico stk__ico" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · COMO PEDIR -->
+    <section class="how" id="como-pedir" data-fhost>
+      <div class="fl fl--blur fl--lg w-shake" data-speed=".1" data-rot="1" aria-hidden="true"><img src="assets/milkshake.webp" alt="" loading="lazy" width="414" height="760"></div>
+      <div class="fl fl--lg w-g4" data-speed="-.1" data-rot="-1" aria-hidden="true"><img src="assets/gelato-4.webp" alt="" loading="lazy" width="560" height="640"></div>
       <div class="wrap">
         <header class="section-head">
           <p class="eyebrow eyebrow--green reveal">Delivery</p>
@@ -257,9 +332,13 @@
       </div>
     </section>
 
-    <!-- 05 · CTA FINAL -->
-    <section class="final">
+    <!-- 06 · CTA FINAL -->
+    <section class="final" data-fhost>
       <img class="final__pat" src="assets/padrao-branco.png" alt="" aria-hidden="true">
+      <div class="fl fl--lg f-bowl" data-speed=".1" data-rot="1" aria-hidden="true"><img src="assets/acai-bowl.webp" alt="" loading="lazy" width="924" height="900"></div>
+      <div class="fl fl--lg f-g3" data-speed="-.08" data-rot="-1" aria-hidden="true"><img src="assets/gelato-3.webp" alt="" loading="lazy" width="560" height="640"></div>
+      <div class="fl f-copo" data-speed=".14" data-rot="1" aria-hidden="true"><img src="assets/acai-copo.webp" alt="" loading="lazy" width="470" height="760"></div>
+      <div class="fl f-g5" data-speed="-.12" data-rot="-1" aria-hidden="true"><img src="assets/gelato-5.webp" alt="" loading="lazy" width="568" height="640"></div>
       <div class="wrap final__inner reveal">
         <div class="final__logo"><img src="assets/logo.png" alt="Dunga Açaí & Gelatos" width="220" height="92" loading="lazy"></div>
         <h2 class="h2 h2--light">Bateu a vontade?<br><span>Peça agora no delivery.</span></h2>
@@ -298,6 +377,7 @@
         <h4>Atalhos</h4>
         <p><a href="#promocoes">Promoções</a></p>
         <p><a href="#unidades">Unidades</a></p>
+        <p><a href="#dunga-movel">Dunga Móvel</a></p>
         <p><a href="#como-pedir">Como pedir</a></p>
       </div>
     </div>
@@ -342,6 +422,7 @@
       <symbol id="i-home" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3l9 8h-2.5v9h-5v-6h-3v6h-5v-9H3z"/></symbol>
       <symbol id="i-bag" viewBox="0 0 24 24"><path fill="currentColor" d="M6 7V6a6 6 0 0 1 12 0v1h2.2a1 1 0 0 1 1 1.1l-1.3 12A2 2 0 0 1 17 22H7a2 2 0 0 1-1.9-1.9L3.8 8.1A1 1 0 0 1 4.8 7zm2 0h8V6a4 4 0 0 0-8 0zm1.5 4a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm5 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/></symbol>
       <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="currentColor" d="M4 11h12.2l-4.6-4.6L13 5l7 7-7 7-1.4-1.4 4.6-4.6H4z"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"/></symbol>
     </defs>
   </svg>
 
